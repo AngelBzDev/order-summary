@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+}
+
+:root{
+   --paleBlue: hsl(225, 100%, 94%);
+   --brigthBlue: hsl(245, 75%, 52%);
+   --veryBlue: hsl(225, 100%, 98%);
+   --desaturated: hsl(224, 23%, 55%);
+   --darkBlue: hsl(223, 47%, 23%);
+}
+
+body{
+   font-family: 'Red Hat Display', sans-serif;
+   font-size: 16px;
+   background-color: var(--paleBlue);
+   background-image: url(../images/pattern-background-desktop.svg);
+   background-repeat: no-repeat;
+}
+
+img{
+   width: 100%;
+}
+
+.container {
+   max-width: 1440px;
+   width: 90%;
+   margin: 0 auto;
+}
+
+.card{
+   margin-top: 50px;
+   border-radius: 10px;
+   width: 273.59px;
+   margin: 50px auto;
+   background-color: #fff;
+}
+
+.image img {
+   border-radius: 15px 15px 0 0;
+}
+
+.info-container {
+   padding: 20px;
+}
+
+.title{
+   font-size: 1.2rem;
+   text-align: center;
+   color: var(--darkBlue);
+   margin-bottom: 15px;
+   font-weight: 900;
+}
+
+.info{
+   font-size: 13px;
+   color: var(--desaturated);
+   text-align: center;
+   line-height: 1.7;
+   display: block;
+   width: 95%;
+   margin: 15px auto;
+}
+
+.plan-info {
+   background-color: var(--veryBlue);
+   padding: 15px 10px;
+   display: flex;
+   border-radius: 5px;
+   justify-content: space-between;
+   align-items: center;
+   margin:15px 0;
+}
+
+.plan-info img{
+   width: 17%;
+}
+
+.plan-info .plan-title {
+   font-size: 13px;
+   color: var(--darkBlue);
+}
+
+.plan p{
+   font-size: 12px;
+   color: var(--desaturated);
+}
+
+.plan-info a{
+   font-size: 12px;
+   color: var(--brigthBlue);
+   font-weight: 700;
+}
+
+.btn{
+   background: none;
+   color: var(--desaturated);
+   padding: 12px;
+   text-align: center;
+   border: none;
+   border-radius: 5px;
+   font-size: 13px;
+   font-weight: 700;
+   width: 100%;
+   cursor: pointer;
+}
+
+.btn.btn-blue{
+   background-color: var(--brigthBlue);
+   color: #fff;
+   margin-bottom: 10px;
+}
+
+@media (min-width: 375px) {
+   .card {
+      width: 350px;
+   }
+
+   .info-container{
+      width: 90%;
+      margin: 0 auto;
+   }
+}
